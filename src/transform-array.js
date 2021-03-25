@@ -30,7 +30,6 @@ let newArr = [];
   }
   return newArr;
 
-
   }
 
 
