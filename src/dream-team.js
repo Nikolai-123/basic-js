@@ -5,18 +5,12 @@ module.exports = function createDreamTeam( members ) {
   let team = members.filter(function(member){
     return typeof member =='string';
   })
-  team = team.map(function(team) {
-    team = team.join(',').toUpperCase().replace(/\s/g, '');
-  return team;
-  });
-
-  
+  team = team.join(',').toUpperCase();
+  team = team.replace(/\s/g, '');
   team = team.split(',')
   team = team.sort();
   team = team.map(function(team) {
-    team = team[0];
-    
-  return team;
+  return team[0];
   });
   team = team.join('');
   
