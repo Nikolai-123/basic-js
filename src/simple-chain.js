@@ -5,7 +5,6 @@ const chainMaker = {
 
   getLength() {
     return this.str.length;
-    
   },
   addLink(value) {
     this.str.push('( '+value+' )');
